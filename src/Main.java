@@ -11,12 +11,11 @@ void main() {
     }
     {
         System.out.println("Задание 2");
-        int temperature = -5;
+        int temperature = 3;
         System.out.println("На улице " + temperature + " градусов");
         if (temperature < 5) {
             System.out.println("На улице холодно,нужно надеть шапку");
-        }
-        if (temperature > 5) {
+        } else if (temperature > 5) {
             System.out.println("Сегодня тепло,можно идти без шапки");
         }
     }
@@ -35,27 +34,22 @@ void main() {
         int age4 = 9;
         if (age4 >= 2 && age4 <= 6) {
             System.out.println("Если возраст человека равен " + age4 + " ,то ему нужно ходить в детский сад");
-        }
-        if (age4 >= 7 && age4 <= 17) {
+        } else if (age4 >= 7 && age4 <= 17) {
             System.out.println("Если возраст человека равен " + age4 + " ,то ему нужно ходить в школу");
-        }
-        if (age4 >= 18 && age4 <= 24) {
+        } else if (age4 >= 18 && age4 <= 24) {
             System.out.println("Если возраст человека равен " + age4 + " ,то ему нужно ходить в университет");
-        }
-        if (age4 > 24) {
+        } else if (age4 > 24) {
             System.out.println("Если возраст человека равен " + age4 + " ,то ему нужно ходить на работу");
         }
     }
     {
         System.out.println("Задание 5");
-        int age5 = 12;
+        int age5 = 15;
         if (age5 < 5) {
             System.out.println("Если возраст ребёнка равен " + age5 + " ,то ему нельзя кататься на аттракционе ");
-        }
-        if (age5 >= 5 && age5 <= 14) {
+        } else if (age5 >= 5 && age5 <= 14) {
             System.out.println("Если возраст ребёнка равен " + age5 + " ,то можно кататься в сопровождении взрослого");
-        }
-        if (age5 > 14) {
+        } else if (age5 > 14) {
             System.out.println("Если возраст ребёнка равен " + age5 + " ,то можно кататься без сопровождения взрослого");
         }
     }
@@ -85,20 +79,22 @@ void main() {
         } else {
             System.out.println("Мест в вагоне нет");
         }
+    }
+    {
+        System.out.println("Задание 7");
+        int one = 3;
+        int two = 1;
+        int three = 13;
+        if (one == two && two == three && one == three) {
+            System.out.println("Набиольшего значения нет, все числа равны между собой " + "(" + one + ")");
 
-        {
-            System.out.println("Задание 7");
-            int one = 8;
-            int two = 6;
-            int three = 13;
-            if (one >= two && one >= three) {
-                System.out.println(one + " Наибольшее чилсо");
-            }
-            if (two >= one && two >= three) {
-                System.out.println(two + " Наибольшее чилсо");
-            } else {
-                System.out.println(three + " Наибольшее чилсо");
-            }
+        } else if (one >= two && one >= three) {
+            System.out.println(one + " Наибольшее чилсо");
+        } else if (two >= one && two >= three) {
+            System.out.println(two + " Наибольшее чилсо");
+        } else {
+            System.out.println(three + " Наибольшее чилсо");
         }
     }
 }
+
